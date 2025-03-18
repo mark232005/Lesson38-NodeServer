@@ -1,0 +1,16 @@
+{
+  "name": "lesson38-nodeserver",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mark",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2"
+  }
+}
