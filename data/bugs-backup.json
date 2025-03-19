@@ -1,0 +1,37 @@
+[
+    {
+        "_id": "abc123",
+        "title": "Cannot save a new car",
+        "description": "problem when clicking Save",
+        "severity": 3,
+        "createdAt": 1542107359454
+    },
+    {
+        "_id": "def456",
+        "title": "Unable to connect to database",
+        "description": "Connection times out after several retries",
+        "severity": 4,
+        "createdAt": 1542107459454
+    },
+    {
+        "_id": "ghi789",
+        "title": "Page not found",
+        "description": "404 error when accessing the user profile page",
+        "severity": 2,
+        "createdAt": 1542107559454
+    },
+    {
+        "_id": "jkl012",
+        "title": "Crash on app startup",
+        "description": "App crashes immediately after launch on iOS",
+        "severity": 5,
+        "createdAt": 1542107659454
+    },
+    {
+        "_id": "mno345",
+        "title": "Slow response time",
+        "description": "Response time exceeds 5 seconds for some API calls",
+        "severity": 3,
+        "createdAt": 1542107759454
+    }
+]
