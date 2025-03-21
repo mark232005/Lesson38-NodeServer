@@ -33,5 +33,75 @@
         "description": "Response time exceeds 5 seconds for some API calls",
         "severity": 3,
         "createdAt": 1542107759454
+    },
+    {
+        "_id": "pqr678",
+        "title": "Login fails intermittently",
+        "description": "User cannot log in at random times, error 403",
+        "severity": 4,
+        "createdAt": 1542107859454
+    },
+    {
+        "_id": "stu901",
+        "title": "Missing user profile picture",
+        "description": "User profile picture does not load for some accounts",
+        "severity": 2,
+        "createdAt": 1542107959454
+    },
+    {
+        "_id": "vwx234",
+        "title": "Incorrect price displayed",
+        "description": "Product price is showing incorrectly on the checkout page",
+        "severity": 3,
+        "createdAt": 1542108059454
+    },
+    {
+        "_id": "yz0123",
+        "title": "Feature toggle not working",
+        "description": "Feature toggle fails to enable/disable a specific feature",
+        "severity": 4,
+        "createdAt": 1542108159454
+    },
+    {
+        "_id": "abc567",
+        "title": "App freezes during load",
+        "description": "App freezes for a few seconds when navigating to the dashboard",
+        "severity": 3,
+        "createdAt": 1542108259454
+    },
+    {
+        "_id": "def890",
+        "title": "404 error on product page",
+        "description": "User receives 404 error when accessing a product page",
+        "severity": 2,
+        "createdAt": 1542108359454
+    },
+    {
+        "_id": "ghi123",
+        "title": "Payment gateway issue",
+        "description": "Payment gateway fails to process payments during checkout",
+        "severity": 5,
+        "createdAt": 1542108459454
+    },
+    {
+        "_id": "jkl456",
+        "title": "Search bar returns wrong results",
+        "description": "Search bar displays unrelated results when a product name is searched",
+        "severity": 3,
+        "createdAt": 1542108559454
+    },
+    {
+        "_id": "mno678",
+        "title": "Video playback lag",
+        "description": "Videos do not play smoothly, lagging during playback",
+        "severity": 4,
+        "createdAt": 1542108659454
+    },
+    {
+        "_id": "pqr345",
+        "title": "Email notifications delayed",
+        "description": "Email notifications are delayed by several hours",
+        "severity": 2,
+        "createdAt": 1542108759454
     }
 ]
