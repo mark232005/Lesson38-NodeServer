@@ -1,5 +1,33 @@
 [
     {
+        "title": "Bug ",
+        "severity": 3,
+        "description": "34vd",
+        "_id": "8lkbY",
+        "createdAt": 1743068805138
+    },
+    {
+        "title": "cwd",
+        "severity": 2,
+        "description": "cdc",
+        "_id": "IUrFN",
+        "createdAt": 1742980394442
+    },
+    {
+        "title": "Bug ",
+        "severity": 1,
+        "description": "sadad",
+        "_id": "FX8W0",
+        "createdAt": 1742926701459
+    },
+    {
+        "title": "mark check",
+        "description": "afvgbhsdjkl;",
+        "severity": "5",
+        "_id": "h39Ui",
+        "createdAt": 1742899990021
+    },
+    {
         "_id": "abc123",
         "title": "Cannot save a new car",
         "description": "problem when clicking Save",
@@ -12,27 +40,6 @@
         "description": "Connection times out after several retries",
         "severity": 4,
         "createdAt": 1542107459454
-    },
-    {
-        "_id": "ghi789",
-        "title": "Page not found",
-        "description": "404 error when accessing the user profile page",
-        "severity": 2,
-        "createdAt": 1542107559454
-    },
-    {
-        "_id": "jkl012",
-        "title": "Crash on app startup",
-        "description": "App crashes immediately after launch on iOS",
-        "severity": 5,
-        "createdAt": 1542107659454
-    },
-    {
-        "_id": "mno345",
-        "title": "Slow response time",
-        "description": "Response time exceeds 5 seconds for some API calls",
-        "severity": 3,
-        "createdAt": 1542107759454
     },
     {
         "_id": "pqr678",
@@ -89,19 +96,5 @@
         "description": "Search bar displays unrelated results when a product name is searched",
         "severity": 3,
         "createdAt": 1542108559454
-    },
-    {
-        "_id": "mno678",
-        "title": "Video playback lag",
-        "description": "Videos do not play smoothly, lagging during playback",
-        "severity": 4,
-        "createdAt": 1542108659454
-    },
-    {
-        "_id": "pqr345",
-        "title": "Email notifications delayed",
-        "description": "Email notifications are delayed by several hours",
-        "severity": 2,
-        "createdAt": 1542108759454
     }
 ]
