@@ -66,7 +66,7 @@ export function BugIndex() {
     }
 
     return <section className="bug-index main-content">
-        <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
+        <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy}/>
         <header>
             <h3>Bug List</h3>
             <button onClick={onAddBug}>Add Bug</button>

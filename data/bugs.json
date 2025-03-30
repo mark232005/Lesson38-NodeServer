@@ -1,5 +1,12 @@
 [
     {
+        "title": "s",
+        "severity": 3,
+        "description": "sd",
+        "_id": "DvUIz",
+        "createdAt": 1743192434887
+    },
+    {
         "title": "Bug ",
         "severity": 3,
         "description": "34vd",
@@ -35,13 +42,6 @@
         "createdAt": 1542107359454
     },
     {
-        "_id": "def456",
-        "title": "Unable to connect to database",
-        "description": "Connection times out after several retries",
-        "severity": 4,
-        "createdAt": 1542107459454
-    },
-    {
         "_id": "pqr678",
         "title": "Login fails intermittently",
         "description": "User cannot log in at random times, error 403",
@@ -68,13 +68,6 @@
         "description": "Feature toggle fails to enable/disable a specific feature",
         "severity": 4,
         "createdAt": 1542108159454
-    },
-    {
-        "_id": "abc567",
-        "title": "App freezes during load",
-        "description": "App freezes for a few seconds when navigating to the dashboard",
-        "severity": 3,
-        "createdAt": 1542108259454
     },
     {
         "_id": "def890",

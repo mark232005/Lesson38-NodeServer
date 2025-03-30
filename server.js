@@ -2,7 +2,8 @@
 import express from 'express'
 import { bugService } from './services/bug.service.js'
 import cookieParer from 'cookie-parser'
-
+import path from 'path'
+import { log } from 'console'
 const app = express()
 
 app.use(express.static('public'))
@@ -15,17 +16,28 @@ app.listen(3031, () => {
 })
 //LIST BUG
 app.get('/api/bug', (req, res) => {
-  const filterBy={
-   txt:req.query.txt||'',
-   minSeverity:+req.query.minSeverity||0,
-   pageIdx: req.query.pageIdx
-  }
-  bugService.query(filterBy).then(bugs => res.send(bugs))
+  const queryOptions=preseQueryParams(req.query)
+  bugService.query(queryOptions).then(bugs => res.send(bugs))
     .catch(err => {
       res.status(500).send('Cannot load bugs')
     })
 
 })
+
+function preseQueryParams(queryParams){
+  const filterBy={
+    txt:queryParams.txt||'',
+    minSeverity:+queryParams.minSeverity||0,
+    pageIdx: queryParams.pageIdx
+   }
+   const sortBy={
+     sortTitle:queryParams.sortField||'',
+     sortSeverity:queryParams.sortField||'',
+     sortDir:+queryParams.sortField||1
+ 
+   }
+ return {sortBy,filterBy}
+}
 
 //CREATE BUG
 app.post('/api/bug/', (req, res) => {
@@ -71,7 +83,10 @@ app.delete('/api/bug/:bugId', (req, res) => {
   bugService.remove(bugId)
     .then(() => res.send('bug Removed'))
     .catch(err => {
-      console.log('it here')
       res.status(500).send('Cannot remove bug')
     })
+})
+
+app.get('/**', (req, res) => {
+  res.sendFile(path.resolve('public/index.html'))
 })
