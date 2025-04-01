@@ -1,0 +1,87 @@
+[{
+    "username": "markaluf",
+    "password": "markaluf",
+    "fullname": "mark aluf",
+    "_id": "u101",
+    "isAdmin": true
+},
+    {
+      "username": "davidcohen",
+      "password": "secret1",
+      "fullname": "David Cohen",
+      "_id": "u102"
+    },
+    {
+      "username": "maya_levi",
+      "password": "secret2",
+      "fullname": "Maya Levi",
+      "_id": "u103"
+    },
+    {
+      "username": "eliav_bar",
+      "password": "secret3",
+      "fullname": "Eliav Bar",
+      "_id": "u104"
+    },
+    {
+      "username": "yaara_goldstein",
+      "password": "secret4",
+      "fullname": "Yaara Goldstein",
+      "_id": "u105"
+    },
+    {
+      "username": "noa_shmueli",
+      "password": "secret5",
+      "fullname": "Noa Shmueli",
+      "_id": "u106"
+    },
+    {
+      "username": "ido_benari",
+      "password": "secret6",
+      "fullname": "Ido Ben-Ari",
+      "_id": "u107"
+    },
+    {
+      "username": "nina_friedman",
+      "password": "secret7",
+      "fullname": "Nina Friedman",
+      "_id": "u108"
+    },
+    {
+      "username": "oren_reuven",
+      "password": "secret8",
+      "fullname": "Oren Reuven",
+      "_id": "u109"
+    },
+    {
+      "username": "shira_koren",
+      "password": "secret9",
+      "fullname": "Shira Koren",
+      "_id": "u110"
+    },
+    {
+      "username": "gilad_zaken",
+      "password": "secret10",
+      "fullname": "Gilad Zaken",
+      "_id": "u111"
+    },
+    {
+      "username": "dana_rivlin",
+      "password": "secret11",
+      "fullname": "Dana Rivlin",
+      "_id": "u112"
+    },
+    {
+      "username": "ronit_levy",
+      "password": "secret12",
+      "fullname": "Ronit Levy",
+      "_id": "u113"
+    },
+    {
+      "username": "tomer_katz",
+      "password": "secret13",
+      "fullname": "Tomer Katz",
+      "_id": "u114"
+    }
+  ]
+  

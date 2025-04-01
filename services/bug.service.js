@@ -22,7 +22,7 @@ function query(queryOptions) {
             const regExp = new RegExp(filterBy.txt, 'i')
             copyBugs = copyBugs.filter(bug => regExp.test(bug.title))
         }
-€
+
         if (filterBy.minSeverity) {
             copyBugs = copyBugs.filter(bug => bug.severity >= filterBy.minSeverity)
         }
