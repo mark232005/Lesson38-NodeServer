@@ -3,7 +3,6 @@ import express from 'express'
 import { bugService } from './services/bug.service.js'
 import cookieParer from 'cookie-parser'
 import path from 'path'
-import { log } from 'console'
 import { userService } from './services/user.service.js'
 import { authService } from './services/auth.service.js'
 const app = express()
