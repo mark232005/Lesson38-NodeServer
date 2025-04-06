@@ -66,7 +66,7 @@ export function BugIndex() {
     }
 
     return <section className="bug-index main-content">
-        <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy}/>
+        <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
             <button onClick={onAddBug}>Add Bug</button>
@@ -79,15 +79,15 @@ export function BugIndex() {
         <label htmlFor="">
             Use paging:
             <input type="checkbox" onChange={(ev) => {
-                setFilterBy(prevFilter => ({ ...prevFilter, pageIdx: ev.target.checked?0:undefined }))
+                setFilterBy(prevFilter => ({ ...prevFilter, pageIdx: ev.target.checked ? 0 : undefined }))
             }} />
         </label>
-        <div hidden={filterBy.pageIdx===undefined}>
+        <div hidden={filterBy.pageIdx === undefined}>
             <button disabled={filterBy.pageIdx === 0} onClick={() => onSetpage(-1)}>Prev page</button>
-        <span>
-            page:{filterBy.pageIdx + 1||''}
-        </span>
-        <button onClick={() => onSetpage(1)}>Next page</button>
+            <span>
+                page:{filterBy.pageIdx + 1 || ''}
+            </span>
+            <button onClick={() => onSetpage(1)}>Next page</button>
 
         </div>
     </section>

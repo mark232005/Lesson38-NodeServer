@@ -4,7 +4,6 @@ import { storageService } from './async-storage.service.js'
 const STORAGE_KEY = 'bugs'
 const BASE_URL = '/api/bug/'
 
-
 export const bugService = {
     query,
     getById,
@@ -14,6 +13,8 @@ export const bugService = {
 }
 
 function query(filterBy) {
+ console.log('filterBy',filterBy);
+ console.log('BASE_URL',BASE_URL,{params:filterBy});
     return axios.get(BASE_URL,{params:filterBy})
         .then(res => res.data)
 }
@@ -49,5 +50,5 @@ function save(bug) {
     }
 }
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0, pageIdx:undefined,sortTitle:null,sortSeverity:null,sortDir:null}
+    return { txt: '', minSeverity: 0, pageIdx:undefined,sortTitle:null,sortSeverity:null,sortDir:null,profile:''}
 }

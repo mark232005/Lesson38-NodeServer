@@ -1,145 +1,123 @@
 [
     {
-        "title": "s",
-        "severity": 3,
-        "description": "sd",
-        "_id": "DvUIz",
-        "createdAt": 1743192434887,
-        "creator": {
-            "_id": "u102",
-            "fullname": "David Cohen"
-        }
+      "title": "s",
+      "severity": 3,
+      "description": "sd",
+      "_id": "DvUIz",
+      "createdAt": 1743192434887,
+      "creator": {
+        "_id": "u102",
+        "fullname": "David Cohen"
+      }
     },
     {
-        "title": "Bug",
-        "severity": 3,
-        "description": "34vd",
-        "_id": "8lkbY",
-        "createdAt": 1743068805138,
-        "creator": {
-            "_id": "u103",
-            "fullname": "Maya Levi"
-        }
+      "title": "Bug",
+      "severity": 3,
+      "description": "34vd",
+      "_id": "8lkbY",
+      "createdAt": 1743068805138,
+      "creator": {
+        "_id": "u103",
+        "fullname": "Maya Levi"
+      }
     },
     {
-        "title": "cwd",
-        "severity": 2,
-        "description": "cdc",
-        "_id": "IUrFN",
-        "createdAt": 1742980394442,
-        "creator": {
-            "_id": "u104",
-            "fullname": "Eliav Bar"
-        }
+      "title": "cwd",
+      "severity": 2,
+      "description": "cdc",
+      "_id": "IUrFN",
+      "createdAt": 1742980394442,
+      "creator": {
+        "_id": "u104",
+        "fullname": "Eliav Bar"
+      }
     },
     {
-        "title": "Bug",
-        "severity": 1,
-        "description": "sadad",
-        "_id": "FX8W0",
-        "createdAt": 1742926701459,
-        "creator": {
-            "_id": "u105",
-            "fullname": "Yaara Goldstein"
-        }
+      "title": "Bug",
+      "severity": 1,
+      "description": "sadad",
+      "_id": "FX8W0",
+      "createdAt": 1742926701459,
+      "creator": {
+        "_id": "u105",
+        "fullname": "Yaara Goldstein"
+      }
     },
     {
-        "title": "mark check",
-        "description": "afvgbhsdjkl;",
-        "severity": 5,
-        "_id": "h39Ui",
-        "createdAt": 1742899990021,
-        "creator": {
-            "_id": "u106",
-            "fullname": "Noa Shmueli"
-        }
+      "title": "mark check",
+      "description": "afvgbhsdjkl;",
+      "severity": 5,
+      "_id": "h39Ui",
+      "createdAt": 1742899990021,
+      "creator": {
+        "_id": "u101",
+        "fullname": "mark aluf"
+      }
     },
     {
-        "_id": "abc123",
-        "title": "Cannot save a new car",
-        "description": "problem when clicking Save",
-        "severity": 3,
-        "createdAt": 1542107359454,
-        "creator": {
-            "_id": "u107",
-            "fullname": "Ido Ben-Ari"
-        }
+      "title": "Login fails intermittently",
+      "severity": 4,
+      "description": "User cannot log in at random times, error 403",
+      "_id": "pqr678",
+      "createdAt": 1542107859454,
+      "creator": {
+        "_id": "u102",
+        "fullname": "David Cohen"
+      }
     },
     {
-        "_id": "pqr678",
-        "title": "Login fails intermittently",
-        "description": "User cannot log in at random times, error 403",
-        "severity": 4,
-        "createdAt": 1542107859454,
-        "creator": {
-            "_id": "u108",
-            "fullname": "Nina Friedman"
-        }
+      "title": "Cannot save a new car",
+      "severity": 3,
+      "description": "Problem when clicking Save",
+      "_id": "abc123",
+      "createdAt": 1542107359454,
+      "creator": {
+        "_id": "u103",
+        "fullname": "Maya Levi"
+      }
     },
     {
-        "_id": "stu901",
-        "title": "Missing user profile picture",
-        "description": "User profile picture does not load for some accounts",
-        "severity": 2,
-        "createdAt": 1542107959454,
-        "creator": {
-            "_id": "u109",
-            "fullname": "Oren Reuven"
-        }
+      "title": "Incorrect price displayed",
+      "severity": 3,
+      "description": "Product price is showing incorrectly on the checkout page",
+      "_id": "vwx234",
+      "createdAt": 1542108059454,
+      "creator": {
+        "_id": "u104",
+        "fullname": "Eliav Bar"
+      }
     },
     {
-        "_id": "vwx234",
-        "title": "Incorrect price displayed",
-        "description": "Product price is showing incorrectly on the checkout page",
-        "severity": 3,
-        "createdAt": 1542108059454,
-        "creator": {
-            "_id": "u110",
-            "fullname": "Shira Koren"
-        }
+      "title": "Missing user profile picture",
+      "severity": 2,
+      "description": "User profile picture does not load for some accounts",
+      "_id": "stu901",
+      "createdAt": 1542107959454,
+      "creator": {
+        "_id": "u105",
+        "fullname": "Yaara Goldstein"
+      }
     },
     {
-        "_id": "yz0123",
-        "title": "Feature toggle not working",
-        "description": "Feature toggle fails to enable/disable a specific feature",
-        "severity": 4,
-        "createdAt": 1542108159454,
-        "creator": {
-            "_id": "u111",
-            "fullname": "Gilad Zaken"
-        }
+      "title": "404 error on product page",
+      "severity": 2,
+      "description": "User receives 404 error when accessing a product page",
+      "_id": "def890",
+      "createdAt": 1542108359454,
+      "creator": {
+        "_id": "u101",
+        "fullname": "mark aluf"
+      }
     },
     {
-        "_id": "def890",
-        "title": "404 error on product page",
-        "description": "User receives 404 error when accessing a product page",
-        "severity": 2,
-        "createdAt": 1542108359454,
-        "creator": {
-            "_id": "u112",
-            "fullname": "Dana Rivlin"
-        }
-    },
-    {
-        "_id": "ghi123",
-        "title": "Payment gateway issue",
-        "description": "Payment gateway fails to process payments during checkout",
-        "severity": 5,
-        "createdAt": 1542108459454,
-        "creator": {
-            "_id": "u113",
-            "fullname": "Ronit Levy"
-        }
-    },
-    {
-        "_id": "jkl456",
-        "title": "Search bar returns wrong results",
-        "description": "Search bar displays unrelated results when a product name is searched",
-        "severity": 3,
-        "createdAt": 1542108559454,
-        "creator": {
-            "_id": "u114",
-            "fullname": "Tomer Katz"
-        }
+      "title": "Payment gateway issue",
+      "severity": 5,
+      "description": "Payment gateway fails to process payments during checkout",
+      "_id": "ghi123",
+      "createdAt": 1542108459454,
+      "creator": {
+        "_id": "u102",
+        "fullname": "David Cohen"
+      }
     }
-]
+  ]

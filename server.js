@@ -29,7 +29,8 @@ function preseQueryParams(queryParams) {
   const filterBy = {
     txt: queryParams.txt || '',
     minSeverity: +queryParams.minSeverity || 0,
-    pageIdx: queryParams.pageIdx
+    pageIdx: queryParams.pageIdx,
+    profile:queryParams.profile||''
   }
   const sortBy = {
     sortTitle: queryParams.sortField || '',
@@ -132,4 +133,14 @@ app.post('/api/auth/logout', (req, res) => {
   res.clearCookie('loginToken')
   res.send('logged-out!')
 })
+
+app.post('/api/user/:userId',(req,res)=>{
+  const{userId}=req.params
+  userService.getById(userId)
+  .then(user=>res.send(user))
+  .catch(err=>{
+    res.status(400).send('Cannot load user')
+  })
+})
+
 

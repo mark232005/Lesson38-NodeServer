@@ -15,12 +15,15 @@ function query() {
     return Promise.resolve(usersToReturn)
 }
 function getById(userId) {
-    var user = users.find(user => user._id === userId)
+    var user = users.find(user =>
+        user._id === userId.trim())
     if (!user) return Promise.reject('User not found!')
+    console.log('dddd');
     user = { ...user }
     delete user.password
     return Promise.resolve(user)
 }
+
 
 function getByUsername(username) {
     var user = users.find(user => user.username === username)
@@ -30,7 +33,7 @@ function remove(userId) {
     users.filter(user => user._id !== userId)
     return _saveUsersToFile()
 }
-function add(user){
+function add(user) {
     return getByUsername(user.username) // Check if username exists...
         .then(existingUser => {
             if (existingUser) return Promise.reject('Username taken')
@@ -38,25 +41,25 @@ function add(user){
             user._id = utilService.makeId()
             // Later, we will call the authService here to encrypt the password
             users.push(user)
-        
+
             return _saveUsersToFile()
                 .then(() => {
-                    user = { ... user }
+                    user = { ...user }
                     delete user.password
                     return user
                 })
         })
 }
 
-function _saveUsersToFile(){
+function _saveUsersToFile() {
     return new Promise((resolve, reject) => {
-		const usersStr = JSON.stringify(users, null, 2)
-		fs.writeFile('data/user.json', usersStr, err => {
-			if (err) {
-				return console.log(err)
-			}
-			resolve()
-		})
-	})
+        const usersStr = JSON.stringify(users, null, 2)
+        fs.writeFile('data/user.json', usersStr, err => {
+            if (err) {
+                return console.log(err)
+            }
+            resolve()
+        })
+    })
 
 }

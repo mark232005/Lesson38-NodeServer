@@ -1,4 +1,5 @@
 const BASE_URL = '/api/user/'
+import axios from 'axios';
 
 export const userService = {
     query,
@@ -12,9 +13,11 @@ function query() {
 }
 
 function getById(userId) {
-    return axios.get(BASE_URL + userId)
-        .then(res => res.data)
+    return axios.post(BASE_URL+userId)
+        .then(res =>res.data )
 }
+
+
 
 function getEmptyCredentials() {
     return {

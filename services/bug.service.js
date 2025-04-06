@@ -46,8 +46,15 @@ function query(queryOptions) {
                 return bug1.createdAt - bug2.createdAt
             })
         }
+        if(filterBy.profile){
+            console.log('filterBy.profile:',filterBy.profile)
+            copyBugs = copyBugs.filter(bug => {
+                // console.log(bug)
+               return  bug.creator._id===filterBy.profile})
 
+        }
 
+console.log(copyBugs);
         return copyBugs
     })
 
