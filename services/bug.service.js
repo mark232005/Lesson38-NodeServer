@@ -47,14 +47,12 @@ function query(queryOptions) {
             })
         }
         if(filterBy.profile){
-            console.log('filterBy.profile:',filterBy.profile)
             copyBugs = copyBugs.filter(bug => {
                 // console.log(bug)
                return  bug.creator._id===filterBy.profile})
 
         }
 
-console.log(copyBugs);
         return copyBugs
     })
 
@@ -76,13 +74,17 @@ function remove(bugId) {
 
 
 
-function save(bugToSave) {
+function save(bugToSave,loggedinUser) {
     if (bugToSave._id) {
         const bugIdx = bugs.findIndex(bug => bug._id === bugToSave._id)
         bugs[bugIdx].severity = bugToSave.severity
     } else {
+        console.log(bugToSave);
         bugToSave._id = utilService.makeId()
         bugToSave.createdAt = Date.now()
+        bugToSave.creator={
+            fullname:loggedinUser.fullname,
+           _id: utilService.makeId()}
         bugs.unshift(bugToSave)
     }
     return _saveBugsToFile().then(() => bugToSave)

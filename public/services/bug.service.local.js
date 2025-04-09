@@ -13,9 +13,7 @@ export const bugService = {
 }
 
 function query(filterBy) {
- console.log('filterBy',filterBy);
- console.log('BASE_URL',BASE_URL,{params:filterBy});
-    return axios.get(BASE_URL,{params:filterBy})
+    return axios.get(BASE_URL, { params: filterBy })
         .then(res => res.data)
 }
 
@@ -33,11 +31,11 @@ function remove(bugId) {
 function save(bug) {
     const url = BASE_URL
     if (bug._id) {
-        return axios.put(url+bug._id, bug)
-        .then(res => res.data)
-        .catch(err => {
-            console.log('err:', err)
-        })
+        return axios.put(url + bug._id, bug)
+            .then(res => res.data)
+            .catch(err => {
+                console.log('err:', err)
+            })
 
 
     } else {
@@ -50,5 +48,5 @@ function save(bug) {
     }
 }
 function getDefaultFilter() {
-    return { txt: '', minSeverity: 0, pageIdx:undefined,sortTitle:null,sortSeverity:null,sortDir:null,profile:''}
+    return { txt: '', minSeverity: 0, pageIdx: undefined, sortTitle: null, sortSeverity: null, sortDir: null, profile: '' }
 }

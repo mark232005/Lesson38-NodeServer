@@ -1,10 +1,16 @@
 [
   {
+    "username": "admin",
+    "password": "admin",
+    "fullname": "admin",
+    "_id": "u106",
+    "isAdmin":"admin"  
+  },
+  {
     "username": "markaluf",
     "password": "markaluf",
     "fullname": "mark aluf",
-    "_id": "u101",
-    "isAdmin": true
+    "_id": "u101"  
   },
   {
     "username": "davidcohen",

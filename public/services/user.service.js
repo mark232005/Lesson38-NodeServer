@@ -9,7 +9,9 @@ export const userService = {
 
 function query() {
     return axios.get(BASE_URL)
-        .then(res => res.data)
+        .then(res => res.data).catch(err => {
+            console.log("Error fetching users:", err);
+        })
 }
 
 function getById(userId) {

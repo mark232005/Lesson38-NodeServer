@@ -6,7 +6,7 @@ import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 import { BugFilter } from '../cmps/BugFilter.jsx'
 import { BugList } from '../cmps/BugList.jsx'
 
-export function BugIndex() {
+export function BugIndex({ loggedinUser}) {
     const [bugs, setBugs] = useState(null)
     const [filterBy, setFilterBy] = useState(bugService.getDefaultFilter())
 
@@ -69,13 +69,14 @@ export function BugIndex() {
         <BugFilter filterBy={filterBy} onSetFilterBy={onSetFilterBy} />
         <header>
             <h3>Bug List</h3>
-            <button onClick={onAddBug}>Add Bug</button>
+            {loggedinUser&&<button onClick={onAddBug}>Add Bug</button>}
         </header>
 
         <BugList
             bugs={bugs}
             onRemoveBug={onRemoveBug}
-            onEditBug={onEditBug} />
+            onEditBug={onEditBug}
+            loggedinUser={loggedinUser} />
         <label htmlFor="">
             Use paging:
             <input type="checkbox" onChange={(ev) => {

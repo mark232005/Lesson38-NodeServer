@@ -13,6 +13,7 @@ import { AboutUs } from './pages/AboutUs.jsx'
 import { LoginSignup } from './pages/LoginSignup.jsx'
 import { authService } from './services/auth.service.js'
 import { UserDetails } from './pages/UserDetails.jsx'
+import { UserIndex } from './pages/UserIndex.jsx'
 
 export function App() {
     const [loggedinUser,setLoggedinUser]=useState(authService.getLoggedinUser())
@@ -23,11 +24,12 @@ export function App() {
             <main className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/bug" element={<BugIndex />} />
+                    <Route path="/bug" element={<BugIndex  loggedinUser={loggedinUser} />} />
                     <Route path="/bug/:bugId" element={<BugDetails />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/auth" element={<LoginSignup setLoggedinUser={setLoggedinUser} />} />
                     <Route path="/user/:userId" element={<UserDetails loggedinUser={loggedinUser}/>} />
+                    <Route path="/user/userindex" element={<UserIndex/>} />
                     
                 </Routes>
             </main>
